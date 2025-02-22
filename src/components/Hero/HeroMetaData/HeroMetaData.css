@@ -1,0 +1,7 @@
+.hero__metadata {
+  @apply flex items-center gap-[3px];
+}
+
+.hero__metadata__text {
+  @apply flex gap-x-1 text-neutral-200 text-xs items-center;
+}

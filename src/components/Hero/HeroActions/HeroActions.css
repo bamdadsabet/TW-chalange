@@ -1,0 +1,7 @@
+.hero__actions {
+  @apply flex gap-x-10;
+}
+
+.hero__actions__subsection {
+  @apply flex gap-x-2;
+}

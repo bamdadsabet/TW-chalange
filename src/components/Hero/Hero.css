@@ -1,0 +1,27 @@
+.hero {
+  @apply w-full h-[580px];
+}
+
+.hero__thumbnail {
+  @apply w-full h-full -z-1
+}
+
+.hero__content {
+  @apply py-20;
+}
+
+.hero__series-logo {
+  @apply w-400 mb-10;
+}
+
+.hero__title {
+ @apply text-white mb-2 font-bold text-xl;
+}
+
+.hero__footer {
+  @apply flex justify-between items-center;
+}
+
+.hero__description {
+  @apply text-white text-base;
+}

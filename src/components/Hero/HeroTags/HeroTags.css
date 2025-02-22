@@ -1,0 +1,7 @@
+.hero__tags {
+  @apply flex gap-x-1 mb-8;
+}
+
+.hero__tag {
+  @apply rounded-sm py-[2px] px-1 flex text-white text-[11px];
+}
