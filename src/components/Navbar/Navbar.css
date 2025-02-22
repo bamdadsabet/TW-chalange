@@ -1,0 +1,11 @@
+.navbar {
+  @apply bg-[#0e1317] fixed w-full flex justify-between border-b border-[#1a1f23];
+}
+
+.navbar__link {
+  @apply text-white;
+}
+
+.navbar__link__container {
+  @apply flex gap-4 items-center;
+}
