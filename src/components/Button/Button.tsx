@@ -1,4 +1,5 @@
 import { IButtonProps, ButtonTypeEnum } from "./types"
+import './Button.css'
 function Button({type = ButtonTypeEnum.PRIMARY, icon, children, action}: IButtonProps) {
   return (
     <button 

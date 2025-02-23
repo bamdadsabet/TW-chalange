@@ -2,7 +2,6 @@ export interface IHeroProps extends THeroTagsProps {
   images: Record<'thumbnail' | 'logo' | 'network', string>
   title: string
   description: string
-  actionUrl: string
   metaData: IHeroMetaDataProps
 }
 

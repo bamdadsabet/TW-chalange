@@ -1,7 +1,7 @@
 import { HeroActions, HeroMetaData, HeroTags, IHeroProps } from ".";
 import './Hero.css'
 
-function Hero({title, description, actionUrl, images, metaData, tags}: IHeroProps) {
+function Hero({title, description, images, metaData, tags}: IHeroProps) {
   return (
     <section className="hero">
 
@@ -24,7 +24,7 @@ function Hero({title, description, actionUrl, images, metaData, tags}: IHeroProp
         <HeroTags tags={tags} />
 
         {/* actions */}
-        <HeroActions actionUrl={actionUrl}/>
+        <HeroActions />
 
         {/* hero footer */}
         <div className="hero__footer">

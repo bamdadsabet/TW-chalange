@@ -17,7 +17,6 @@ const hero: IHeroProps = {
     'علمی تخیلی',
     'دلهره‌آور'
   ],
-  actionUrl: 'api.tw.com',
   metaData: {
     likes: 56,
     IMDBbRate: 8.2,
