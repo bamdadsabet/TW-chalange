@@ -1,13 +1,18 @@
 .hero {
-  @apply w-full h-[580px];
+  @apply w-full h-[580px] relative;
 }
 
 .hero__thumbnail {
-  @apply w-full h-full z-[-1]
+  @apply w-full h-full absolute top-0 left-0 object-cover;
+}
+
+.hero::after {
+  content: '';
+  @apply absolute inset-0 bg-gradient-to-r from-black/80 to-black/50;
 }
 
 .hero__content {
-  @apply w-full py-20 absolute top-0;
+  @apply w-full py-20 relative z-10 h-full flex flex-col justify-end;
 }
 
 .hero__series-logo {
@@ -15,7 +20,7 @@
 }
 
 .hero__title {
- @apply text-white mb-2 font-bold text-xl;
+  @apply text-white mb-2 font-bold text-xl;
 }
 
 .hero__footer {

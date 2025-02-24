@@ -11,12 +11,11 @@
 }
 
 .episode-list__tab--active {
- @apply border-b border-[#FD4141];
- background: linear-gradient(0deg, #000000, #000000),
-linear-gradient(360deg, rgba(253, 65, 65, 0.2) 0%, rgba(253, 65, 65, 0) 100%);
+ @apply border-b border-[#FD4141] bg-gradient-to-t from-[#FD4141] to-transparent;
+ 
 
 }
 
 .episode--list__displayed-episodes {
-  @apply flex gap-4;
+  @apply flex gap-4 flex-wrap;
 }
