@@ -1,4 +1,4 @@
-import { THeroTagsProps } from "../types"
+import { THeroTagsProps } from "@components/Hero"
 import './HeroTags.css'
 
 function HeroTags({ tags }: THeroTagsProps) {

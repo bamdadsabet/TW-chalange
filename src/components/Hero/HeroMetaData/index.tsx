@@ -1,4 +1,4 @@
-import { IHeroMetaDataProps } from "../types"
+import { IHeroMetaDataProps } from "@components/Hero"
 import './HeroMetaData.css'
 
 function HeroMetaData({IMDBbRate, hasDubbed, hasEnded, likes, madeIn, onAirDuration, isPG13, time, total}: IHeroMetaDataProps) {

@@ -1,11 +1,6 @@
 export interface IButtonProps {
-  type?: ButtonTypeEnum
+  type?: 'primary' | 'outlined'
   icon?: string
   children?: React.ReactNode
   action?: () => void
-}
-
-export const enum ButtonTypeEnum {
-  PRIMARY = 'PRIMARY',
-  OUTLINED = 'OUTLINED'
 }

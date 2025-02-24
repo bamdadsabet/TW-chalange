@@ -1,10 +1,10 @@
-import { IButtonProps, ButtonTypeEnum } from "./types"
+import { IButtonProps } from "./types"
 import './Button.css'
-function Button({type = ButtonTypeEnum.PRIMARY, icon, children, action}: IButtonProps) {
+function Button({type = 'primary', icon, children, action}: IButtonProps) {
   return (
     <button 
       onClick={action} 
-      className={`button ${type === ButtonTypeEnum.PRIMARY ? 'button--primary' : 'button--outlined'}`}
+      className={`button ${type === 'primary' ? 'button--primary' : 'button--outlined'}`}
     >
       {children}
       {

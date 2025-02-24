@@ -13,3 +13,7 @@ export interface ISeason {
   season: number
   episodes: IEpisodeCardProps[]
 }
+
+export interface IEpisodeListProps {
+  episodesList: ISeason[]
+} 

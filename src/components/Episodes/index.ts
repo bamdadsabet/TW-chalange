@@ -1,7 +1,7 @@
 import EpisodeCard from "./EpisodeCard";
 import EpisodesList from "./EpisodesList";
-import { IEpisodeCardProps, ISeason } from "./types";
+import { IEpisodeCardProps, ISeason, IEpisodeListProps } from "./types";
 
 export { EpisodeCard, EpisodesList }
 
-export type { IEpisodeCardProps, ISeason }
+export type { IEpisodeCardProps, ISeason, IEpisodeListProps }

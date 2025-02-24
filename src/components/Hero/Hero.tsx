@@ -9,7 +9,7 @@ function Hero({title, description, images, metaData, tags}: IHeroProps) {
       <img src={images.thumbnail} alt={title} className="hero__thumbnail" />
 
       {/* hero content */}
-      <div className="hero__content">
+      <div className="hero__content section-fold">
 
         {/* series logo */}
         <img src={images.logo} alt={title} className="hero__series-logo" />

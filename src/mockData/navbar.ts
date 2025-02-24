@@ -1,4 +1,4 @@
-import { INavbarLink } from "../components/Navbar";
+import { INavbarLink } from "@components/Navbar";
 
 const navbar: INavbarLink[] = [
   {

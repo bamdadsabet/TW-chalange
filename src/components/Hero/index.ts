@@ -1,4 +1,4 @@
-import { IHeroProps } from "./types";
+import { IHeroProps, THeroTagsProps, IHeroMetaDataProps } from "./types";
 import Hero from "./Hero";
 import HeroActions from "./HeroActions";
 import HeroTags from "./HeroTags";
@@ -7,4 +7,4 @@ import HeroMetaData from "./HeroMetaData";
 
 export {Hero, HeroActions, HeroTags, HeroMetaData}
 
-export type { IHeroProps }
+export type { IHeroProps, THeroTagsProps, IHeroMetaDataProps }

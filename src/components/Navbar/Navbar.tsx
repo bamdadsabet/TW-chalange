@@ -1,6 +1,6 @@
 import { TNavbarProps } from "."
 import "./Navbar.css"
-import logo from "../../assets/logo.svg"
+import logo from "@assets/logo.svg"
 
 function Navbar({links}: TNavbarProps) {
  return (
@@ -14,7 +14,7 @@ function Navbar({links}: TNavbarProps) {
           </a>
         </li>
         {links.map((link) => (
-          <li key={link.name} key={link.href}>
+          <li key={link.name}>
             <a className="navbar__link" href={link.href}>{link.name}</a>
           </li>
         ))}
