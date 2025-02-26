@@ -1,5 +1,5 @@
 .hero {
-  @apply w-full h-[580px] relative lg:mt-12 mt-14 lg:mb-5 mb-8;
+  @apply w-full lg:h-[580px] relative lg:mt-12 mt-14 lg:mb-5 mb-8;
 }
 
 .hero__thumbnail {
@@ -11,19 +11,19 @@
 }
 
 .hero__thumbnail--mobile {
-  @apply block lg:hidden;
+  @apply block lg:hidden static h-[216px];
 }
 
 .hero__content {
-  @apply w-full py-20 relative z-10 h-full flex flex-col justify-end;
+  @apply w-full lg:py-20 relative z-10 lg:h-full flex flex-col justify-end;
 }
 
 .hero__series-logo {
-  @apply w-[400px] mb-10;
+  @apply w-[400px] mb-10 lg:visible hidden;
 }
 
 .hero__title {
-  @apply text-white mb-2 font-bold text-xl;
+  @apply text-white mb-2 font-bold text-xl lg:text-right text-center lg:translate-x-0 -translate-y-3;
 }
 
 .hero__footer {
@@ -31,5 +31,5 @@
 }
 
 .hero__description {
-  @apply text-white text-base max-w-[576px];
+  @apply text-white text-base max-w-[576px] lg:text-right text-center;
 }

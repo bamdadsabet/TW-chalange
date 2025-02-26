@@ -1,21 +1,21 @@
 .episode-card {
-  @apply flex flex-col gap-y-2 w-[280px];
+  @apply flex lg:flex-col flex-row lg:gap-y-2 gap-x-2 lg:w-[280px] w-full;
 }
 
 .episode-card__thumbnail {
-  @apply relative border border-white w-[280px] h-[158px];
+  @apply relative border border-[#FFFFFF1A] lg:w-[280px] lg:h-[158px] w-[200px] h-[94px];
 }
 
 .episode-card__img {
-  @apply w-full h-full absolute;
+  @apply w-full aspect-auto absolute;
 }
 
 .episode-card__time {
-  @apply absolute bottom-1 left-1 text-white bg-black bg-opacity-70 text-xs; 
+  @apply absolute bottom-1 left-1 text-white bg-black bg-opacity-70 text-xs p-1; 
 }
 
 .episode-card__data {
-  @apply flex justify-between items-start;
+  @apply flex lg:flex-row flex-col gap-y-1  justify-between items-start;
 }
 
 .episode-card__info {

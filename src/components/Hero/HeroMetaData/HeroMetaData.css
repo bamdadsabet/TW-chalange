@@ -1,5 +1,5 @@
 .hero__metadata {
-  @apply flex items-center gap-2 pb-2;
+  @apply flex items-center gap-2 pb-2 flex-wrap lg:justify-start justify-center;
 }
 
 .hero__metadata__text {

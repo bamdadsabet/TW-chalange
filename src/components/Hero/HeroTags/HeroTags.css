@@ -1,5 +1,5 @@
 .hero__tags {
-  @apply flex gap-x-1 mb-8;
+  @apply flex gap-x-1 mb-8 lg:justify-start justify-center;
 }
 
 .hero__tag {

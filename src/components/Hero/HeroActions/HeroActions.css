@@ -1,5 +1,9 @@
 .hero__actions {
-  @apply flex gap-x-10 mb-8;
+  @apply flex lg:flex-row flex-col lg:gap-x-10 gap-y-4 lg:mb-8 mb-6;
+}
+
+.hero__actions__sub-action {
+  @apply flex gap-x-10 lg:justify-start justify-center; 
 }
 
 .hero__actions__subsection {

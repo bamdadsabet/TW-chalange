@@ -35,7 +35,7 @@ function Hero({title, description, images, metaData, tags}: IHeroProps) {
           <p className="hero__description">{description}</p>
           
           {/* streaming network logo */}
-          <img src={images.network} alt={title} />
+          <img className="lg:visible hidden" src={images.network} alt={title} />
         </div>
       </div>
     </section>

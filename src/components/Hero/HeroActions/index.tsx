@@ -12,17 +12,20 @@ function HeroActions() {
 
       {/* view  */}
       <Button icon={play}>پخش</Button>
+      
+      {/* sub actions */}
+      <div className="hero__actions__sub-action">
+        {/* bookmark and download  */}
+        <div className="hero__actions__subsection">
+          <Button type="outlined" icon={download} />
+          <Button type="outlined" icon={bookmark} />
+        </div>
 
-      {/* bookmark and download  */}
-      <div className="hero__actions__subsection">
-        <Button type="outlined" icon={download} />
-        <Button type="outlined" icon={bookmark} />
-      </div>
-
-      {/* likes and dislike  */}
-      <div className="hero__actions__subsection">
-        <Button type="outlined" icon={dislike} />
-        <Button type="outlined" icon={like} />
+        {/* likes and dislike  */}
+        <div className="hero__actions__subsection">
+          <Button type="outlined" icon={dislike} />
+          <Button type="outlined" icon={like} />
+        </div>
       </div>
     </div>
   )
