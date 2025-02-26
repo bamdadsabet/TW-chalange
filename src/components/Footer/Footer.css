@@ -29,3 +29,12 @@
 .footer--mobile__social-media {
   @apply flex justify-center items-center gap-4;
 }
+
+.footer__download-app__button {
+  @apply text-neutral-100 text-[11px];
+  padding: 4px !important;
+}
+
+.footer__download-app__button img {
+  @apply w-4 h-4;
+}

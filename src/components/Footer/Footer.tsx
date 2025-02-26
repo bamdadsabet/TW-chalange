@@ -12,7 +12,7 @@ function Footer() {
         {/* links */}
         <ul className="footer__subsection">
           <li>
-            <Button icon={downloadIcon} type="outlined">دانلود اپلیکیشن</Button>
+            <Button className="footer__download-app__button" icon={downloadIcon} type="outlined">دانلود اپلیکیشن</Button>
           </li>
           <li className="footer__links">
             <FooterLinks />
@@ -39,7 +39,7 @@ function Footer() {
 
         {/* social medias  */}
         <div className="footer--mobile__social-media">
-        <Button icon={downloadIcon} type="outlined">دانلود اپلیکیشن</Button>
+        <Button className="footer__download-app__button" icon={downloadIcon} type="outlined">دانلود اپلیکیشن</Button>
           <FooterSocialMedias />
         </div>
 
