@@ -1,12 +1,11 @@
-import { IEpisodeCardProps, ISeason } from "../components/Episodes"
-const images = Object.keys(import.meta.glob('@/assets/episodesThumbnails/*.png', { eager: true }))
+import { IEpisodeCardProps, ISeason } from "@components/Episodes"
+const images = Object.keys(import.meta.glob('@assets/episodesThumbnails/*.png', { eager: true }))
 
 
 
 
 const episodeSeeder = () => {
-  console.log(images)
-  const res: IEpisodeCardProps[] = [
+  const res: Omit<IEpisodeCardProps, 'season'>[] = [
     {
       title: 'مرد آهنی: انتقام برای آزادی',
       episode: 1,
@@ -30,7 +29,7 @@ const episodeSeeder = () => {
   return res
 }
 
-const seasonSeeder = (seasonAmount: number, episodesList: IEpisodeCardProps[]) => {
+const seasonSeeder = (seasonAmount: number, episodesList: Omit<IEpisodeCardProps, 'season'>[]) => {
   const res = []
   for (let i = 0; i < seasonAmount; i++) {
     res.push({

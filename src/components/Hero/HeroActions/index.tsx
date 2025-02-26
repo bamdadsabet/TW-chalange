@@ -23,8 +23,8 @@ function HeroActions() {
 
         {/* likes and dislike  */}
         <div className="hero__actions__subsection">
-          <Button type="outlined" icon={dislike} />
           <Button type="outlined" icon={like} />
+          <Button type="outlined" icon={dislike} />
         </div>
       </div>
     </div>
