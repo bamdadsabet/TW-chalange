@@ -7,11 +7,12 @@ export interface IEpisodeCardProps {
   views?: string
   link: string
   time: `${number}:${number}:${number}`
+  season: number
 }
 
 export interface ISeason {
   season: number
-  episodes: IEpisodeCardProps[]
+  episodes: Omit<IEpisodeCardProps, 'season'>[]
 }
 
 export interface IEpisodeListProps {

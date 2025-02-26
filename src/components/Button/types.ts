@@ -3,4 +3,5 @@ export interface IButtonProps {
   icon?: string
   children?: React.ReactNode
   action?: () => void
+  className?: string
 }
