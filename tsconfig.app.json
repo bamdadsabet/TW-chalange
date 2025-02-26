@@ -6,7 +6,7 @@
       "@components/*": ["src/components/*"],
       "@assets/*": ["src/assets/*"],
       "@mock/*": ["src/mock/*"],
-      "@mock": ["src/mock/index.ts"],
+      "@mock": ["src/mockData/index.ts"],
     },
 
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
