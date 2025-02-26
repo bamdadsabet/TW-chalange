@@ -1,11 +1,15 @@
 import { IHeroProps } from "@components/Hero"
 import thumbnail from '@assets/hero/thumbnail.png'
+import thumbnailMobile from '@assets/hero/thumbnail--mobile.png'
 import network from '@assets/hero/network.png'
 import logo from '@assets/hero/logo.png'
 
 const hero: IHeroProps = {
   images: {
-    thumbnail,
+    thumbnail : {
+      desktop: thumbnail,
+      mobile: thumbnailMobile
+    },
     logo,
     network,
   },

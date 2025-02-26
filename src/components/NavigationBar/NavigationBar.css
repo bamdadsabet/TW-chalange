@@ -1,0 +1,24 @@
+.navigation-bar {
+  @apply flex py-2 px-3 justify-between items-center;
+}
+
+.navigation-bar__container {
+  @apply lg:hidden block items-center fixed bottom-0 w-full z-50 bg-black bg-opacity-95 border-t border-[#1F2933];
+}
+
+.navigation-bar__icon {
+  @apply w-6 h-6;
+}
+
+.navigation-bar__link {
+  @apply flex flex-col items-center gap-1;
+}
+
+.navigation-bar__text {
+  @apply text-center text-[10px] font-semibold text-white; 
+}
+
+.navigation-bar__swipe-bar {
+  @apply w-[45px] h-1 bg-neutral-700 mx-auto my-2 rounded-[100px];
+}
+

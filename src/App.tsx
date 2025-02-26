@@ -5,13 +5,15 @@ import { navbar } from "./mockData";
 import { hero } from "@mock";
 import { episodes } from "@mock";
 import { EpisodesList } from "@components/Episodes";
+import { NavigationBar } from "./components/NavigationBar";
 function App() {
   return (
-    <section className="bg-black h-screen">
+    <section>
       <Navbar links={navbar} />
       <Hero {...hero} />
       <EpisodesList episodesList={episodes} />
       <Footer />
+      <NavigationBar />
     </section>
   );
 }

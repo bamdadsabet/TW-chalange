@@ -1,17 +1,17 @@
 const footer: Record<'socialMedias' | 'links', ILink[]> =  {
   socialMedias: [
     {
-      name: 'instagram',
-      href: '#'
-    },
+      name: 'bale',
+      href: 'https://ble.ir/telewebion',
+    }, 
     {
-      name: 'LinkedIn',
+      name: 'linkedin',
       href: 'https://www.linkedin.com/company/telewebion/'
     },
     {
-      name: 'bale',
-      href: 'https://ble.ir/telewebion',
-    } 
+      name: 'instagram',
+      href: '#'
+    },
   ],
   links: [
     {

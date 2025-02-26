@@ -1,14 +1,17 @@
 import { IEpisodeCardProps, ISeason } from "../components/Episodes"
-import ep1Img from '@assets/episodesThumbnails/ep1.png'
+const images = Object.keys(import.meta.glob('@/assets/episodesThumbnails/*.png', { eager: true }))
+
+
 
 
 const episodeSeeder = () => {
+  console.log(images)
   const res: IEpisodeCardProps[] = [
     {
       title: 'مرد آهنی: انتقام برای آزادی',
       episode: 1,
       link: '#',
-      thumbnail:ep1Img ,
+      thumbnail: images[0] ,
       time: '1:32:48',
     },
   ]
@@ -20,7 +23,7 @@ const episodeSeeder = () => {
       subtitle: 'رستاخیز فرشتگان',
       views: `${i + 1  * 12} هزار بازدید`,
       rate: 3 * i,
-      thumbnail: `@assets/episodesThumbnails/ep${i + 1}.png`,
+      thumbnail: images[i],
       time: '1:32:48',
     })
   }

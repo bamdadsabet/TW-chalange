@@ -1,44 +1,54 @@
 import "./Footer.css";
-import { footer } from "@mock";
+import { Button } from "@components/Button";
+import downloadIcon from '@assets/icons/download.svg';
+import FooterSocialMedias from "./FooterSocialMedias";
+import FooterLinks from "./FooterLinks";
+
 function Footer() {
   return (
-    <footer className="footer">
-      {/* social medias */}
-      <ul className="footer__subsection">
-        <li className="footer__social-media">
-          {footer.socialMedias.map((socialMedia) => (
-            <a
-              target="_blank"
-              rel="noreferrer noopener"
-              href={socialMedia.href}
-              key={socialMedia.name}
-              className="footer__text"
-            >
-              {socialMedia.name}
-            </a>
-          ))}
-        </li>
-        <li className="text-[12px] text-neutral-700">
-          .تمامی حقوق برای تلوبیون محفوظ است
-        </li>
-      </ul>
+    <>
+      {/* desktop footer  */}
+      <footer className="footer">
+        {/* links */}
+        <ul className="footer__subsection">
+          <li>
+            <Button icon={downloadIcon} type="outlined">دانلود اپلیکیشن</Button>
+          </li>
+          <li className="footer__links">
+            <FooterLinks />
+          </li>
+        </ul>
 
-      {/* links */}
-      <ul className="footer__subsection">
-        <li></li>
-        <li className="footer__links">
-          {footer.links.map((link) => (
-            <a
-              href={link.href}
-              key={link.name}
-              className="text-[12px] text-neutral-400"
-            >
-              {link.name}
-            </a>
-          ))}
-        </li>
-      </ul>
-    </footer>
+        {/* social medias */}
+        <ul className="footer__subsection">
+        <li className="footer__copyright">
+            .تمامی حقوق برای تلوبیون محفوظ است
+          </li>
+          <li className="footer__social-media">
+            <FooterSocialMedias />
+          </li>
+        </ul>
+      </footer>
+
+      {/* mobile footer  */}
+      <footer className="footer--mobile">
+        {/* links */}
+        <div className="footer--mobile__links">
+          <FooterLinks />
+        </div>
+
+        {/* social medias  */}
+        <div className="footer--mobile__social-media">
+        <Button icon={downloadIcon} type="outlined">دانلود اپلیکیشن</Button>
+          <FooterSocialMedias />
+        </div>
+
+        {/* copyright  */}
+        <div className="footer__copyright">
+        .تمامی حقوق برای تلوبیون محفوظ است
+        </div>
+      </footer>
+    </>
   );
 }
 

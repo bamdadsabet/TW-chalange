@@ -5,8 +5,10 @@ function Hero({title, description, images, metaData, tags}: IHeroProps) {
   return (
     <section className="hero">
 
-      {/* thumbnail */}
-      <img src={images.thumbnail} alt={title} className="hero__thumbnail" />
+      {/* desktop thumbnail */}
+      <img src={images.thumbnail.desktop} alt={title} className="hero__thumbnail hero__thumbnail--desktop" />
+
+      <img src={images.thumbnail.mobile} alt={title} className="hero__thumbnail hero__thumbnail--mobile" />
 
       {/* hero content */}
       <div className="hero__content section-fold">

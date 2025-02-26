@@ -1,5 +1,13 @@
 .navbar {
-  @apply bg-[#0e1317] fixed w-full flex justify-between border-b border-[#1a1f23];
+  @apply fixed top-0 w-full flex justify-between items-center border-b border-[#1a1f23] z-50;
+}
+
+.navbar--desktop {
+  @apply hidden lg:flex bg-[#0e1317];
+}
+
+.navbar--mobile {
+  @apply lg:hidden flex bg-black py-2 px-4;
 }
 
 .navbar__link {

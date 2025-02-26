@@ -1,5 +1,5 @@
 .footer {
-  @apply fixed bottom-0 py-2 px-10 flex justify-between items-center w-full;
+  @apply py-2 px-10 lg:flex hidden justify-between items-center w-full; 
 }
 
 .footer__subsection {
@@ -11,7 +11,21 @@
 }
 
 .footer__social-media {
-  @apply flex gap-2 items-center;
-   /* FIXME */
-   @apply text-[12px] text-neutral-400;
+  @apply flex gap-2 items-center text-[12px] text-neutral-400;
+}
+
+.footer__copyright {
+  @apply text-[12px] text-neutral-700 lg:text-right text-center;
+}
+
+.footer--mobile {
+  @apply lg:hidden flex flex-col mb-24 justify-center gap-y-2;
+}
+
+.footer--mobile__links {
+  @apply flex justify-center gap-2;
+}
+
+.footer--mobile__social-media {
+  @apply flex justify-center items-center gap-4;
 }

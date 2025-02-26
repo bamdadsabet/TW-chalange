@@ -1,14 +1,17 @@
 .hero {
-  @apply w-full h-[580px] relative;
+  @apply w-full h-[580px] relative lg:mt-12 mt-14 lg:mb-5 mb-8;
 }
 
 .hero__thumbnail {
   @apply w-full h-full absolute top-0 left-0 object-cover;
 }
 
-.hero::after {
-  content: '';
-  @apply absolute inset-0 bg-gradient-to-r from-black/80 to-black/50;
+.hero__thumbnail--desktop {
+  @apply hidden lg:block;
+}
+
+.hero__thumbnail--mobile {
+  @apply block lg:hidden;
 }
 
 .hero__content {

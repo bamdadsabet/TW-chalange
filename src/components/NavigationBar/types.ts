@@ -1,0 +1,1 @@
+export type TNavigationBarLink = Record<'name' | 'icon' | 'href', string>
