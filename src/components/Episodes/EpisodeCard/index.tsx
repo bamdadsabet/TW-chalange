@@ -2,7 +2,7 @@ import { IEpisodeCardProps } from "@components/Episodes";
 import likeIcon from '@assets/icons/like-fill.svg'
 import './EpisodeCard.css'
 
-function EpisodeCard({ episode, link, thumbnail, time, title, rate, views, subtitle }: IEpisodeCardProps) {
+function EpisodeCard({ episode, season, link, thumbnail, time, title, rate, views, subtitle }: IEpisodeCardProps) {
   const toggleLike = () => {
     console.log('toggle like')
   }
@@ -37,8 +37,10 @@ function EpisodeCard({ episode, link, thumbnail, time, title, rate, views, subti
 
             {/* episode number */}
             <span className="episode-card__text">
-              {episode} 
+              فصل {season} قسمت {episode}
             </span>
+
+            <span className="text-neutral-400 -translate-y-[1px]">.</span>
 
             {/* views */}
             { !!views && <span className="episode-card__text">{views}</span> }
@@ -48,7 +50,7 @@ function EpisodeCard({ episode, link, thumbnail, time, title, rate, views, subti
         {/* episode rate  */}
         { !!rate && <div className="episode-card__subsection">
           <img src={likeIcon} alt="like-button" onClick={toggleLike} />
-          <span className="episode-card__text">{rate}</span>
+          <span className="episode-card__text">{rate} %</span>
         </div> }
       </div>
     </a>

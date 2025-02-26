@@ -35,14 +35,14 @@ function EpisodesList({ episodesList }: IEpisodeListProps) {
       {/* episode list  */}
       <div className="episode--list__displayed-episodes">
         {
-          selectedSeasonEpisodes?.map(episode => (
-            <EpisodeCard {...episode} />
+          selectedSeasonEpisodes?.map((episode, index) => (
+            <EpisodeCard {...episode} season={selectedSeason} key={index} />
           ))
         }
       </div>
 
       {/* show more  */}
-      <Button action={fetchMoreEpisodes} type="outlined">مشاهده بیشتر</Button>
+      <Button className="episode-list__show-more" action={fetchMoreEpisodes} type="outlined">مشاهده بیشتر</Button>
     </section>
   )
 }

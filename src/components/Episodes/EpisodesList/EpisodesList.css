@@ -1,5 +1,5 @@
 .episode--list {
-  @apply flex flex-col gap-y-5;
+  @apply flex flex-col gap-y-5 lg:mb-16 mb-8;
 }
 
 .episode-list__tab {
@@ -7,7 +7,7 @@
 }
 
 .episode-list__tab__container {
-  @apply flex border-b border-neutral-900 w-full;
+  @apply flex border-b border-neutral-900 w-full overflow-auto text-nowrap;
 }
 
 .episode-list__tab--active {
@@ -17,5 +17,9 @@
 }
 
 .episode--list__displayed-episodes {
-  @apply flex lg:gap-4 gap-y-7 flex-wrap;
+  @apply flex md:gap-4 gap-y-7 flex-wrap;
+}
+
+.episode-list__show-more {
+  @apply max-w-[240px] text-sm mx-auto lg:mt-8 mt-4;
 }
