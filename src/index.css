@@ -2,6 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: "Yekan";
+  src: url("./assets/fonts/Yekan-Hairline.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Yekan";
+  src: url("./assets/fonts/Yekan-Thin.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Yekan";
+  src: url("./assets/fonts/Yekan-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Yekan";
+  src: url("./assets/fonts/Yekan-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Yekan";
+  src: url("./assets/fonts/Yekan-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Yekan";
+  src: url("./assets/fonts/Yekan-Bold.ttf")  format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Yekan";
+  src: url("./assets/fonts/Yekan-Fat.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 .section-title {
   @apply text-white font-bold text-xl mb-4;
 }
@@ -12,6 +57,7 @@
 
 * {
   direction: rtl;
+  font-family: 'Yekan';
 }
 
 body {
